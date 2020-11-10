@@ -6,4 +6,6 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   
+  has_many :room_user
+  has_many :room, through: :room_user
 end
