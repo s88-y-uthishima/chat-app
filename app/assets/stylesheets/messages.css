@@ -1,71 +1,43 @@
 .wrapper {
   display: flex;
 }
-
 .side-bar {
   background-color: #253141;
   width: 300px;
   height: 100vh;
 }
 
-.chat {
-  width: calc(100% - 300px);
-  background-color: #ffffff;
-}
-
 .side-bar-header {
   height: 100px;
+  padding: 0 20px;
   background-color: #253141;
-  padding: 0 20px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between;
 }
 
-.rooms {
-  height: calc(100vh - 100px);
-  background-color: #2F3E51;
-  padding: 0 20px;
-  overflow: scroll;
-}
-
-.chat-header {
-  height: 100px;
-  background-color: #ffffff;
-  padding: 0 40px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.messages {
-  height: calc(100vh - 190px);
-  background-color: #fafafa;
-  padding: 46px 40px 0;
-  overflow: scroll;
-}
-
-.form {
-  height: 90px;
-  background-color: #dddddd;
-  padding: 20px 40px;
-  display: flex;
-}
-
-.header-name a {
+.header-name a{
   font-size: 16px;
-  color: #fafafa;
+  color: #FAFAFA;
   text-decoration: none;
 }
 
 .create-room {
-border: 1px solid lightblue;
-padding: 14px;
+  font-size: 10px;
 }
 
 .create-room a {
-  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
   color: deepskyblue;
   text-decoration: none;
+}
+
+.rooms {
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
 }
 
 .room {
@@ -77,10 +49,22 @@ padding: 14px;
   color: white;
 }
 
+.chat {
+  background-color: #ffffff;
+  width: calc(100% - 300px);
+}
+
+.chat-header {
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-title {
-  font-size: 24px;
   color: #333;
-  margin: 36px 0 0 0;
+  font-size: 24px;
+  margin-top: 36px;
 }
 
 .header-button {
@@ -88,40 +72,53 @@ padding: 14px;
 }
 
 .header-button a {
-  color: darkred;
-  border: 1px solid darkred;
-  padding: 20px;
   text-decoration: none;
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
+}
+
+.messages {
+  background-color: #FAFAFA;
+  height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+  overflow: scroll;
 }
 
 .message {
-  margin-top: 10px;
+  margin: 10px 0 0 0;
+}
+
+.upper-message{
   display: flex;
 }
 
 .message-user {
+  color: #434a54;
   font-size: 16px;
-  color: #434a54;
 }
 
-.message-data {
-  font-size: 12px;
+.message-date {
   color: #999;
+  font-size: 12px;
   padding-left: 10px;
-}
-
-.message-content {
-  font-size: 14px;
-  color: #434a54;
-  margin-bottom: 40px;
-}
-
-.upper-message {
-  display: flex;
 }
 
 .lower-message {
   margin-top: 10px;
+}
+
+.message-content {
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.form {
+  background-color: #DDDDDD;
+  height: 90px;
+  padding: 20px 40px;
+  display: flex;
 }
 
 .form-input {
@@ -138,17 +135,13 @@ padding: 14px;
 }
 
 .form-submit {
+  background-color: #38AEF0;
   border: none;
-  font-size: 16px;
   color: white;
-  background-color: #38aef0;
+  font-size: 16px;
   height: 50px;
-  padding: 0 20px;
   margin-left: 15px;
-}
-
-.hidden {
-  display: none;
+  padding: 0 20px;
 }
 
 .form-image {
@@ -159,4 +152,8 @@ padding: 14px;
   width: 60px;
   margin: 5px 10px;
   text-align: center;
+}
+
+.hidden {
+  display: none;
 }
